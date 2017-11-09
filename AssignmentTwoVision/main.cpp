@@ -10,7 +10,7 @@
 #include "Transformations.h"
 #include "LinearHoughTransform.h"
 #include "CircularHoughTransform.h"
-#include <opencv2/imgproc/imgproc.hpp>
+#include "RectangleDetector.h"
 
 using namespace cv;
 
@@ -28,9 +28,11 @@ int main(int argc, char** argv) {
     
     
     int thresh = 60;
+    vector<Line> detectedLines;
         
     convertToGradient(image, thresh);
-    getLinesHoughTransform(original, image, 100, 1);
+    LinearHoughTransform(image, detectedLines, 100, 1);
+    RectangleDetector(original, detectedLines);
     
     //getCirclesHoughTransform(original, image, 40, 100, 5, 1);
     

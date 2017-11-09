@@ -36,11 +36,11 @@ public:
         p2 = cv::Point(x,y);
     }
     
-    cv::Point pointOne() {
+    cv::Point pointOne() const{
         return p1;
     }
     
-    cv::Point pointTwo() {
+    cv::Point pointTwo() const{
         return p2;
     }
 
