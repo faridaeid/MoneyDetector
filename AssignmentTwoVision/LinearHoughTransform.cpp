@@ -9,14 +9,29 @@
 #include "LinearHoughTransform.h"
 #include <iostream>
 #include "Matrix.h"
+#include <queue>
 
-struct Polar {
+class Polar {
+public:
+    
     int raw;
     int theta;
+    
+    Polar(){};
     
     Polar(int r, int t) {
         raw = r;
         theta = t;
+    }
+};
+
+struct QuObject {
+    
+    int thresh;
+    Polar p;
+        
+    bool operator < (const QuObject& rhs) const {
+        return rhs.thresh > thresh;
     }
 };
 
@@ -25,9 +40,9 @@ using namespace std;
 using namespace cv;
 
 void fillLinearAccumelator(const Mat& image,
+                           vector<Polar>& highVotePolar,
                            Matrix<int>& accumelator,
-                           const int& threshold,
-                           vector<Polar>& highVotePolar) {
+                           const int& threshold) {
     
     int mid = accumelator.rows()/2;
     int vote;
@@ -54,6 +69,42 @@ void fillLinearAccumelator(const Mat& image,
         }
     }
 }
+
+void removeCloseLines(std::vector<Polar>& detectedLines,
+                      Matrix<int>& accumelator,
+                      const int& minGap) {
+    
+    priority_queue<QuObject> queue;
+    QuObject queueObject;
+    int mid = accumelator.rows() / 2;
+    
+    for (Polar p : detectedLines) {
+        queueObject.thresh = accumelator[p.raw + mid][p.theta + 90];
+        queueObject.p = p;
+        queue.push(queueObject);
+    }
+    
+    detectedLines.clear();
+    detectedLines.resize(0);
+    
+    while (!queue.empty()) {
+        
+        Polar curr = queue.top().p;
+        queue.pop();
+        
+        if (accumelator[curr.raw + mid][curr.theta + 90]) {
+            detectedLines.push_back(curr);
+            
+            int raw = curr.raw + mid;
+            
+            for(int i = -minGap; i <= minGap; i++) {
+                if (raw + i > 0 && raw + i < accumelator.rows())
+                    accumelator[raw + i][curr.theta + 90] = 0;
+            }
+        }
+    }
+}
+
 
 vector<Line> getDetectedLines(vector<Polar>& highVotePolar,
                               int imageWidth,
@@ -90,6 +141,8 @@ vector<Line> getDetectedLines(vector<Polar>& highVotePolar,
             
         }
         
+        line.setTheta(theta);
+        line.setRaw(realr);
         detected.push_back(line);
     }
     return detected;
@@ -101,29 +154,33 @@ void LinearHoughTransform(const cv::Mat& image,
                             int threshold,
                             const int& showHough) {
     
-    string windowName = "Linear Hough Space";
-    
     int range = sqrt(2)*max(image.cols, image.rows) * 2;
     
     Matrix<int> accumelator(range + 1, 181);
     
     vector<Polar> highVotePolar;
     
-    fillLinearAccumelator(image, accumelator, threshold, highVotePolar);
+    fillLinearAccumelator(image, highVotePolar, accumelator, threshold);
+    
+    removeCloseLines(highVotePolar, accumelator, 20);
     
     lines = getDetectedLines(highVotePolar, image.cols, image.rows);
     
-    Mat hough = Mat(accumelator.rows(), accumelator.cols(), CV_8UC1, Scalar(255, 255, 255));
-    
-    for (int y = 0; y < hough.rows; y++) {
-        for (int x = 0; x < hough.cols; x++) {
-            
-            hough.at<uchar>(y,x) = 255 - accumelator[y][x];
-            
-        }
-    }
     
     if (showHough) {
+        
+        Mat hough = Mat(accumelator.rows(), accumelator.cols(), CV_8UC1, Scalar(255, 255, 255));
+        
+        for (int y = 0; y < hough.rows; y++) {
+            for (int x = 0; x < hough.cols; x++) {
+                
+                hough.at<uchar>(y,x) = 255 - accumelator[y][x];
+                
+            }
+        }
+        
+        string windowName = "Linear Hough Space";
+        
         namedWindow(windowName, WINDOW_NORMAL);
         imshow(windowName, hough);
     }

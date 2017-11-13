@@ -12,7 +12,7 @@
 #include <opencv2/core/core.hpp>
 #include "Line.h"
 
-void RectangleDetector(cv::Mat original,
+void DetectRectangle(cv::Mat original,
                        const std::vector<Line> detectedLines);
 
 

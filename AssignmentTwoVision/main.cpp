@@ -11,6 +11,7 @@
 #include "LinearHoughTransform.h"
 #include "CircularHoughTransform.h"
 #include "RectangleDetector.h"
+#include "CoinDetector.h"
 
 using namespace cv;
 
@@ -22,22 +23,27 @@ int main(int argc, char** argv) {
     }
     
     Mat image = imread(argv[1], IMREAD_COLOR);
-    Mat original = image;
+    Mat original = image.clone();
     
     string windowName = "Output Image";
     
     
-    int thresh = 60;
+    int thresh = 40;
     vector<Line> detectedLines;
+    vector<Circle> detectedCircles;
         
     convertToGradient(image, thresh);
-    LinearHoughTransform(image, detectedLines, 100, 1);
-    RectangleDetector(original, detectedLines);
+    LinearHoughTransform(image, detectedLines, 150, 1);
+    DetectRectangle(original, detectedLines);
     
-    //getCirclesHoughTransform(original, image, 40, 100, 5, 1);
+    getCirclesHoughTransform(image, detectedCircles, 90, 100, 110, 5, 30, 1);
+    DetectCoins(original, detectedCircles);
     
     namedWindow(windowName, WINDOW_NORMAL);
-    imshow(windowName, original);
+    imshow(windowName, image);
+    namedWindow("original", WINDOW_NORMAL);
+
+    imshow("original", original);
     waitKey(0);
         
 }

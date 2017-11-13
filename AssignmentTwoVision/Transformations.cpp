@@ -14,13 +14,9 @@ using namespace cv;
 
 void convertToGradient(Mat& image, int threshold) {
     
-    //(image, image, COLOR_BGR2GRAY);
-    //blur(image, image, Size(5,5));
-    GaussianBlur(image, image, Size(11,11), 0, 0, BORDER_DEFAULT);
-    Canny(image, image, threshold/3, threshold, 3);
-    
-    
-    /*GaussianBlur(image, image, Size(3,3), 0, 0, BORDER_DEFAULT);
+    for (int i = 0; i < 5; i++) {
+        blur(image, image, Size(9,9));
+    }
     
     cvtColor(image, image, COLOR_BGR2GRAY);
     
@@ -31,6 +27,34 @@ void convertToGradient(Mat& image, int threshold) {
     
     magnitude(gradX, gradY, image);
     
-    normalize(image, image, 0.0, 255.0, NORM_MINMAX, CV_8U);*/
+    normalize(image, image, 0.0, 255.0, NORM_MINMAX, CV_8U);
+    
+    for (int i = 0; i < 10; i++) {
+        blur(image, image, Size(7,7));
+    }
+    
+    cv::threshold(image, image, 0, 255, THRESH_BINARY + THRESH_OTSU);
+
+    Laplacian( image, image, CV_16S, 3, 1, 0, BORDER_DEFAULT);
+    
+    convertScaleAbs( image, image );
+    
+    for (int i = 0; i < 10; i++) {
+        blur(image, image, Size(7,7));
+    }
+    
+    cv::threshold(image, image, 0, 255, THRESH_BINARY + THRESH_OTSU);
+    
+    Mat floodFill = image.clone();
+    
+    cv::floodFill(floodFill, cv::Point(0,0), cv::Scalar(255));
+    
+    bitwise_not(floodFill, floodFill);
+    
+    image = image | floodFill;
+
+    Laplacian( image, image, CV_16S, 3, 1, 0, BORDER_DEFAULT);
+    
+    convertScaleAbs( image, image );
     
 }

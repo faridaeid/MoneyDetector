@@ -9,6 +9,10 @@
 #ifndef CoinDetector_hpp
 #define CoinDetector_hpp
 
-#include <stdio.h>
+#include <opencv2/core/core.hpp>
+#include "Circle.h"
+
+void DetectCoins(cv::Mat original,
+                       const std::vector<Circle> detectedCircles);
 
 #endif /* CoinDetector_hpp */
