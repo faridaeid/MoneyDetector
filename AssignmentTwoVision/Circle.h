@@ -24,11 +24,11 @@ public:
         this->r = r;
     }
     
-    cv::Point center() {
+    cv::Point center() const {
         return c;
     }
     
-    int radius() {
+    int radius() const {
         return r;
     }
     

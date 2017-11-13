@@ -63,7 +63,7 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "/Users/faridaeid/Desktop/work/vision/rect.png"
+            argument = "/Users/faridaeid/Desktop/work/vision/IMG_2923.jpg"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>

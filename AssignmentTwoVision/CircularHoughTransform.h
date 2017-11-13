@@ -10,14 +10,15 @@
 #define CircularHoughTransform_hpp
 
 #include <opencv2/core/core.hpp>
-#include <opencv2/highgui/highgui.hpp>
+#include "Circle.h"
 
-
-void getCirclesHoughTransform(cv::Mat& originalImage,
-                              cv::Mat& image ,
-                              int minRad,
-                              int maxRad,
-                              int step,
+void getCirclesHoughTransform(const cv::Mat& image ,
+                              std::vector<Circle>& detectedCircles,
+                              const int& threshold,
+                              const int& minRad,
+                              const int& maxRad,
+                              const int& step,
+                              const int& minGap = 5,
                               const int& showHough = 0);
 
 #endif /* CircularHoughTransform_hpp */

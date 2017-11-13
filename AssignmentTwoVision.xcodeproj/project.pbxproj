@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		371481561FB4797C00F5BAD2 /* CoinDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 371481541FB4797C00F5BAD2 /* CoinDetector.cpp */; };
+		371481591FB4799800F5BAD2 /* RectangleDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 371481571FB4799800F5BAD2 /* RectangleDetector.cpp */; };
 		375AFD871FAC053000786E83 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 375AFD861FAC053000786E83 /* main.cpp */; };
 		37B8C58C1FB11944003C9BA3 /* Transformations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37B8C58A1FB11944003C9BA3 /* Transformations.cpp */; };
 		37B8C58F1FB12EA7003C9BA3 /* LinearHoughTransform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37B8C58D1FB12EA7003C9BA3 /* LinearHoughTransform.cpp */; };
-		37B8C5921FB13A64003C9BA3 /* Matrix.h in Sources */ = {isa = PBXBuildFile; fileRef = 37B8C5911FB13A64003C9BA3 /* Matrix.h */; };
 		37B8C5941FB19677003C9BA3 /* Line.h in Sources */ = {isa = PBXBuildFile; fileRef = 37B8C5931FB19677003C9BA3 /* Line.h */; };
 		37B8C5AC1FB38FA2003C9BA3 /* CircularHoughTransform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37B8C5AA1FB38FA2003C9BA3 /* CircularHoughTransform.cpp */; };
 /* End PBXBuildFile section */
@@ -28,13 +29,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		371481531FB4793300F5BAD2 /* Matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix.h; sourceTree = "<group>"; };
+		371481541FB4797C00F5BAD2 /* CoinDetector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CoinDetector.cpp; sourceTree = "<group>"; };
+		371481551FB4797C00F5BAD2 /* CoinDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoinDetector.h; sourceTree = "<group>"; };
+		371481571FB4799800F5BAD2 /* RectangleDetector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RectangleDetector.cpp; sourceTree = "<group>"; };
+		371481581FB4799800F5BAD2 /* RectangleDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RectangleDetector.h; sourceTree = "<group>"; };
 		375AFD831FAC053000786E83 /* AssignmentTwoVision */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AssignmentTwoVision; sourceTree = BUILT_PRODUCTS_DIR; };
 		375AFD861FAC053000786E83 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		37B8C58A1FB11944003C9BA3 /* Transformations.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Transformations.cpp; sourceTree = "<group>"; };
 		37B8C58B1FB11944003C9BA3 /* Transformations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transformations.h; sourceTree = "<group>"; };
 		37B8C58D1FB12EA7003C9BA3 /* LinearHoughTransform.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LinearHoughTransform.cpp; sourceTree = "<group>"; };
 		37B8C58E1FB12EA7003C9BA3 /* LinearHoughTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinearHoughTransform.h; sourceTree = "<group>"; };
-		37B8C5911FB13A64003C9BA3 /* Matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Matrix.h; path = ../Matrix.h; sourceTree = "<group>"; };
 		37B8C5931FB19677003C9BA3 /* Line.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Line.h; sourceTree = "<group>"; };
 		37B8C5AA1FB38FA2003C9BA3 /* CircularHoughTransform.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CircularHoughTransform.cpp; sourceTree = "<group>"; };
 		37B8C5AB1FB38FA2003C9BA3 /* CircularHoughTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularHoughTransform.h; sourceTree = "<group>"; };
@@ -71,14 +76,18 @@
 		375AFD851FAC053000786E83 /* AssignmentTwoVision */ = {
 			isa = PBXGroup;
 			children = (
-				375AFD861FAC053000786E83 /* main.cpp */,
-				37B8C5AA1FB38FA2003C9BA3 /* CircularHoughTransform.cpp */,
 				37B8C5AD1FB3924E003C9BA3 /* Circle.h */,
+				37B8C5AA1FB38FA2003C9BA3 /* CircularHoughTransform.cpp */,
 				37B8C5AB1FB38FA2003C9BA3 /* CircularHoughTransform.h */,
+				371481541FB4797C00F5BAD2 /* CoinDetector.cpp */,
+				371481551FB4797C00F5BAD2 /* CoinDetector.h */,
 				37B8C5931FB19677003C9BA3 /* Line.h */,
 				37B8C58D1FB12EA7003C9BA3 /* LinearHoughTransform.cpp */,
 				37B8C58E1FB12EA7003C9BA3 /* LinearHoughTransform.h */,
-				37B8C5911FB13A64003C9BA3 /* Matrix.h */,
+				375AFD861FAC053000786E83 /* main.cpp */,
+				371481531FB4793300F5BAD2 /* Matrix.h */,
+				371481571FB4799800F5BAD2 /* RectangleDetector.cpp */,
+				371481581FB4799800F5BAD2 /* RectangleDetector.h */,
 				37B8C58A1FB11944003C9BA3 /* Transformations.cpp */,
 				37B8C58B1FB11944003C9BA3 /* Transformations.h */,
 			);
@@ -143,7 +152,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37B8C5921FB13A64003C9BA3 /* Matrix.h in Sources */,
+				371481561FB4797C00F5BAD2 /* CoinDetector.cpp in Sources */,
+				371481591FB4799800F5BAD2 /* RectangleDetector.cpp in Sources */,
 				37B8C5AC1FB38FA2003C9BA3 /* CircularHoughTransform.cpp in Sources */,
 				37B8C58C1FB11944003C9BA3 /* Transformations.cpp in Sources */,
 				375AFD871FAC053000786E83 /* main.cpp in Sources */,
