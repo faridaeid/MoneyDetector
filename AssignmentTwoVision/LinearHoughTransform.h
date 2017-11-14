@@ -15,8 +15,9 @@
 #include "Line.h"
 
 void LinearHoughTransform(const cv::Mat& image,
-                            std::vector<Line> & lines,
-                            int threshold,
-                            const int& showHough = 0);
+                          std::vector<Line> & lines,
+                          const int& threshold,
+                          const int& minGap,
+                          const int& showHough = 0);
 
 #endif /* HoughTranforms_hpp */

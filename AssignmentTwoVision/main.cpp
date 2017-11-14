@@ -33,16 +33,15 @@ int main(int argc, char** argv) {
     vector<Circle> detectedCircles;
         
     convertToGradient(image, thresh);
-    LinearHoughTransform(image, detectedLines, 150, 1);
+    LinearHoughTransform(image, detectedLines, 230, 30, 1);
     DetectRectangle(original, detectedLines);
     
-    getCirclesHoughTransform(image, detectedCircles, 90, 100, 110, 5, 30, 1);
+    getCirclesHoughTransform(image, detectedCircles, 139, 100, 150, 5, 40, 1);
     DetectCoins(original, detectedCircles);
     
     namedWindow(windowName, WINDOW_NORMAL);
     imshow(windowName, image);
     namedWindow("original", WINDOW_NORMAL);
-
     imshow("original", original);
     waitKey(0);
         

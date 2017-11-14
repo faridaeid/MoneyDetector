@@ -15,6 +15,6 @@ void DetectCoins(cv::Mat original,
     for(int circle = 0; circle < detectedCircles.size(); circle++) {
         
         cv::circle(original, detectedCircles[circle].center(), detectedCircles[circle].radius(),
-                   cv::Scalar(0,0,255), 3, 8);
+                   cv::Scalar(0,0,255), 6, 8);
     }
 }

@@ -11,6 +11,21 @@
 
 using namespace std;
 
+struct Rectangle {
+    
+    vector<cv::Point> corners;
+    
+    void addCorder(cv::Point c) {
+        if (corners.size() < 4) {
+            corners.push_back(c);
+        }
+    }
+    
+    cv::Point& operator[](int index) {
+        return corners[index];
+    }
+};
+
 void DetectRectangle(cv::Mat original,
                      const std::vector<Line> detectedLines) {
     
@@ -21,7 +36,7 @@ void DetectRectangle(cv::Mat original,
         orderedLines[detectedLines[line].theta() + 90].push_back(detectedLines[line]);
     }
     
-    vector<Line> rectangles;
+    vector<Rectangle> rectangles;
     
     for (int theta = 0; theta < 180; theta++) {
         
@@ -29,25 +44,39 @@ void DetectRectangle(cv::Mat original,
         
         if (orderedLines[theta].size() > 1 && orderedLines[perp].size() > 1) {
             
-            for (Line line : orderedLines[theta]) {
+            for (int line1 = 0; line1 < orderedLines[theta].size() - 1; line1++) {
                 
-                for (int i = 0; i < orderedLines[perp].size() - 1; i+= 2) {
+                for (int line2 = line1 + 1; line2 < orderedLines[theta].size(); line2++) {
                     
-                    Line l(line.getIntersection(orderedLines[perp][i]),
-                           line.getIntersection(orderedLines[perp][i+1]));
+                    Rectangle rect;
+                
+                    for (int line3 = 0; line3 < orderedLines[perp].size() - 1; line3++) {
+                        
+                        rect.addCorder(orderedLines[theta][line1].getIntersection(orderedLines[perp][line3]));
+                        rect.addCorder(orderedLines[theta][line2].getIntersection(orderedLines[perp][line3]));
+
+                        for (int line4 = line3 + 1; line4 < orderedLines[perp].size(); line4++) {
                     
-                    rectangles.push_back(l);
+                            rect.addCorder(orderedLines[theta][line2].getIntersection(orderedLines[perp][line4]));
+                            rect.addCorder(orderedLines[theta][line1].getIntersection(orderedLines[perp][line4]));
+                            
+                            rectangles.push_back(rect);
+                    
+                        }
+                    }
                 }
-                
             }
-            
-            
         }
     }
-    
-    for(int line = 0; line < rectangles.size(); line++) {
+
+
+    for(Rectangle rect : rectangles) {
         
-        cv::line(original, rectangles[line].pointOne(), rectangles[line].pointTwo(), cv::Scalar(255,0,0), 3, 8);
+        for (int i = 0; i < 4; i++) {
+        
+            cv::line(original, rect[i], rect[(i+1)%4], cv::Scalar(255,0,0), 3, 8);
+            
+        }
 
      }
 }

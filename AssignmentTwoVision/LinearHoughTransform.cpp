@@ -51,7 +51,7 @@ void fillLinearAccumelator(const Mat& image,
         
         for (int x = 0; x < image.cols; x++) {
             
-            if (image.at<uchar>(y,x) > 50) {
+            if (image.at<uchar>(y,x) > 0) {
                 
                 for (int thetaDeg = -90; thetaDeg <= 90; thetaDeg++) {
                     
@@ -150,9 +150,10 @@ vector<Line> getDetectedLines(vector<Polar>& highVotePolar,
 
 
 void LinearHoughTransform(const cv::Mat& image,
-                            std::vector<Line> & lines,
-                            int threshold,
-                            const int& showHough) {
+                          std::vector<Line> & lines,
+                          const int& threshold,
+                          const int& minGap,
+                          const int& showHough) {
     
     int range = sqrt(2)*max(image.cols, image.rows) * 2;
     
@@ -162,7 +163,7 @@ void LinearHoughTransform(const cv::Mat& image,
     
     fillLinearAccumelator(image, highVotePolar, accumelator, threshold);
     
-    removeCloseLines(highVotePolar, accumelator, 20);
+    removeCloseLines(highVotePolar, accumelator, minGap);
     
     lines = getDetectedLines(highVotePolar, image.cols, image.rows);
     

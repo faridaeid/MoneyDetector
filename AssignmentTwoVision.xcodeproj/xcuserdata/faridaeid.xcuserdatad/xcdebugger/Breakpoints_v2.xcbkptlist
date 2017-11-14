@@ -262,11 +262,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AssignmentTwoVision/RectangleDetector.cpp"
-            timestampString = "532246566.824456"
+            timestampString = "532310907.120932"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "DetectRectangle(cv::Mat original, const std::vector&lt;Line&gt; detectedLines)"
             landmarkType = "9">
          </BreakpointContent>
@@ -278,11 +278,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AssignmentTwoVision/RectangleDetector.cpp"
-            timestampString = "532247734.00504"
+            timestampString = "532310907.120932"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "DetectRectangle(cv::Mat original, const std::vector&lt;Line&gt; detectedLines)"
             landmarkType = "9">
          </BreakpointContent>
@@ -294,11 +294,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AssignmentTwoVision/RectangleDetector.cpp"
-            timestampString = "532247771.026054"
+            timestampString = "532310907.120932"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
             landmarkName = "DetectRectangle(cv::Mat original, const std::vector&lt;Line&gt; detectedLines)"
             landmarkType = "9">
          </BreakpointContent>
@@ -310,11 +310,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AssignmentTwoVision/RectangleDetector.cpp"
-            timestampString = "532247799.946208"
+            timestampString = "532310907.120932"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "DetectRectangle(cv::Mat original, const std::vector&lt;Line&gt; detectedLines)"
             landmarkType = "9">
          </BreakpointContent>
@@ -326,11 +326,171 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AssignmentTwoVision/RectangleDetector.cpp"
-            timestampString = "532248238.293199"
+            timestampString = "532310907.120932"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "DetectRectangle(cv::Mat original, const std::vector&lt;Line&gt; detectedLines)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AssignmentTwoVision/RectangleDetector.cpp"
+            timestampString = "532310907.120932"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "DetectRectangle(cv::Mat original, const std::vector&lt;Line&gt; detectedLines)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AssignmentTwoVision/RectangleDetector.cpp"
+            timestampString = "532310907.120932"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "DetectRectangle(cv::Mat original, const std::vector&lt;Line&gt; detectedLines)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AssignmentTwoVision/LinearHoughTransform.cpp"
+            timestampString = "532294669.773069"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "removeCloseLines(std::vector&lt;Polar&gt;&amp; detectedLines, Matrix&lt;int&gt;&amp; accumelator, const int&amp; minGap)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AssignmentTwoVision/LinearHoughTransform.cpp"
+            timestampString = "532294689.585648"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "removeCloseLines(std::vector&lt;Polar&gt;&amp; detectedLines, Matrix&lt;int&gt;&amp; accumelator, const int&amp; minGap)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AssignmentTwoVision/LinearHoughTransform.cpp"
+            timestampString = "532294723.576645"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "removeCloseLines(std::vector&lt;Polar&gt;&amp; detectedLines, Matrix&lt;int&gt;&amp; accumelator, const int&amp; minGap)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AssignmentTwoVision/LinearHoughTransform.cpp"
+            timestampString = "532294782.833527"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "removeCloseLines(std::vector&lt;Polar&gt;&amp; detectedLines, Matrix&lt;int&gt;&amp; accumelator, const int&amp; minGap)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AssignmentTwoVision/LinearHoughTransform.cpp"
+            timestampString = "532294783.4221"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "removeCloseLines(std::vector&lt;Polar&gt;&amp; detectedLines, Matrix&lt;int&gt;&amp; accumelator, const int&amp; minGap)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AssignmentTwoVision/LinearHoughTransform.cpp"
+            timestampString = "532294785.633673"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "removeCloseLines(std::vector&lt;Polar&gt;&amp; detectedLines, Matrix&lt;int&gt;&amp; accumelator, const int&amp; minGap)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AssignmentTwoVision/RectangleDetector.cpp"
+            timestampString = "532310907.120932"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "DetectRectangle(cv::Mat original, const std::vector&lt;Line&gt; detectedLines)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AssignmentTwoVision/RectangleDetector.cpp"
+            timestampString = "532310907.120932"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "DetectRectangle(cv::Mat original, const std::vector&lt;Line&gt; detectedLines)"
             landmarkType = "9">
          </BreakpointContent>
