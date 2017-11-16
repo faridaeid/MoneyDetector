@@ -9,7 +9,7 @@
 #ifndef Circle_h
 #define Circle_h
 
-#include <opencv2/core/core.hpp>
+#include <opencv2/opencv.hpp>
 
 class Circle {
     
@@ -19,29 +19,11 @@ private:
     
 public:
     Circle() {}
-    Circle(int x, int y, int r) {
-        c = cv::Point(x,y);
-        this->r = r;
-    }
-    
-    cv::Point center() const {
-        return c;
-    }
-    
-    int radius() const {
-        return r;
-    }
-    
-    void setCenter(int x, int y) {
-        c = cv::Point(x,y);
-    }
-    
-    void setRadius(int r) {
-        this->r = r;
-    }
-    
-    
-    
+    Circle(int x, int y, int r);
+    cv::Point center() const;
+    int radius() const;
+    void setCenter(int x, int y);
+    void setRadius(int r);
 };
 
 

@@ -9,7 +9,6 @@
 #ifndef RectangleDetector_hpp
 #define RectangleDetector_hpp
 
-#include <opencv2/core/core.hpp>
 #include "Line.h"
 
 void DetectRectangle(cv::Mat original,

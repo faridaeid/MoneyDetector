@@ -9,8 +9,6 @@
 #ifndef HoughTranforms_hpp
 #define HoughTranforms_hpp
 
-#include <opencv2/core/core.hpp>
-#include <opencv2/highgui/highgui.hpp>
 #include <vector>
 #include "Line.h"
 

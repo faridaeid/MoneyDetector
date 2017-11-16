@@ -9,8 +9,22 @@
 #include "Transformations.h"
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/highgui/highgui.hpp>
+#include <iostream>
 
 using namespace cv;
+
+void floodFillPicture(const Mat& image,
+                      Mat& floodFill) {
+    
+    floodFill = image.clone();
+    
+    cv::floodFill(floodFill, cv::Point(0,0), cv::Scalar(255));
+    
+    bitwise_not(floodFill, floodFill);
+    
+    floodFill = image | floodFill;
+    
+}
 
 void convertToGradient(Mat& image, int threshold) {
     
@@ -45,16 +59,22 @@ void convertToGradient(Mat& image, int threshold) {
     
     cv::threshold(image, image, 0, 255, THRESH_BINARY + THRESH_OTSU);
     
-    Mat floodFill = image.clone();
+    floodFillPicture(image.clone(), image);
     
-    cv::floodFill(floodFill, cv::Point(0,0), cv::Scalar(255));
-    
-    bitwise_not(floodFill, floodFill);
-    
-    image = image | floodFill;
-
     Laplacian( image, image, CV_16S, 3, 1, 0, BORDER_DEFAULT);
     
     convertScaleAbs( image, image );
     
 }
+
+void extractShapeFromImage(const cv::Mat src,
+               const cv::Mat mask,
+               cv::Mat& dst) {
+    
+    Mat maskedResult;
+    
+    floodFillPicture(mask, maskedResult);
+    
+    src.copyTo(dst, maskedResult);
+}
+
