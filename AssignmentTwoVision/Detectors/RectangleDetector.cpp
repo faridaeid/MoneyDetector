@@ -7,9 +7,9 @@
 //
 
 #include "RectangleDetector.h"
-#include "Transformations.h"
+#include "../Transformations.h"
+#include "../Shapes/Rectangle.h"
 #include "ColorDetector.h"
-#include "Rectangle.h"
 #include <unordered_map>
 
 using namespace std;

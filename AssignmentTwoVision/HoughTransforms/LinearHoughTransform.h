@@ -10,7 +10,7 @@
 #define HoughTranforms_hpp
 
 #include <vector>
-#include "Line.h"
+#include "../Shapes/Line.h"
 
 void LinearHoughTransform(const cv::Mat& image,
                           std::vector<Line> & lines,

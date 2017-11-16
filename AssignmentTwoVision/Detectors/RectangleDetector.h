@@ -9,7 +9,7 @@
 #ifndef RectangleDetector_hpp
 #define RectangleDetector_hpp
 
-#include "Line.h"
+#include "../Shapes/Line.h"
 
 void DetectRectangle(cv::Mat original,
                        const std::vector<Line> detectedLines);

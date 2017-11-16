@@ -6,8 +6,9 @@
 //  Copyright © 2017 Farida Eid. All rights reserved.
 //
 
+
 #include "CoinDetector.h"
-#include "Transformations.h"
+#include "../Transformations.h"
 #include "ColorDetector.h"
 
 void countCoins(const cv::Mat& original,

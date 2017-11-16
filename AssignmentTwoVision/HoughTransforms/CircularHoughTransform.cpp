@@ -6,7 +6,6 @@
 //  Copyright © 2017 Farida Eid. All rights reserved.
 //
 
-#include <opencv2/highgui/highgui.hpp>
 #include "CircularHoughTransform.h"
 #include "Matrix.h"
 #include <vector>

@@ -9,7 +9,7 @@
 #ifndef CircularHoughTransform_hpp
 #define CircularHoughTransform_hpp
 
-#include "Circle.h"
+#include "../Shapes/Circle.h"
 
 void getCirclesHoughTransform(const cv::Mat& image ,
                               std::vector<Circle>& detectedCircles,

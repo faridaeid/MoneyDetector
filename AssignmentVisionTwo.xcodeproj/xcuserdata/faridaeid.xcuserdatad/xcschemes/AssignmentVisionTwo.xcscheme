@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "375AFD821FAC053000786E83"
-               BuildableName = "AssignmentTwoVision"
-               BlueprintName = "AssignmentTwoVision"
-               ReferencedContainer = "container:AssignmentTwoVision.xcodeproj">
+               BlueprintIdentifier = "371481A51FBD9EE900F5BAD2"
+               BuildableName = "AssignmentVisionTwo"
+               BlueprintName = "AssignmentVisionTwo"
+               ReferencedContainer = "container:AssignmentVisionTwo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "375AFD821FAC053000786E83"
-            BuildableName = "AssignmentTwoVision"
-            BlueprintName = "AssignmentTwoVision"
-            ReferencedContainer = "container:AssignmentTwoVision.xcodeproj">
+            BlueprintIdentifier = "371481A51FBD9EE900F5BAD2"
+            BuildableName = "AssignmentVisionTwo"
+            BlueprintName = "AssignmentVisionTwo"
+            ReferencedContainer = "container:AssignmentVisionTwo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,15 +55,15 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "375AFD821FAC053000786E83"
-            BuildableName = "AssignmentTwoVision"
-            BlueprintName = "AssignmentTwoVision"
-            ReferencedContainer = "container:AssignmentTwoVision.xcodeproj">
+            BlueprintIdentifier = "371481A51FBD9EE900F5BAD2"
+            BuildableName = "AssignmentVisionTwo"
+            BlueprintName = "AssignmentVisionTwo"
+            ReferencedContainer = "container:AssignmentVisionTwo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "/Users/faridaeid/Desktop/work/vision/final/image4.jpg"
+            argument = "/Users/faridaeid/Desktop/work/vision/final/image1.jpg"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
@@ -80,10 +80,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "375AFD821FAC053000786E83"
-            BuildableName = "AssignmentTwoVision"
-            BlueprintName = "AssignmentTwoVision"
-            ReferencedContainer = "container:AssignmentTwoVision.xcodeproj">
+            BlueprintIdentifier = "371481A51FBD9EE900F5BAD2"
+            BuildableName = "AssignmentVisionTwo"
+            BlueprintName = "AssignmentVisionTwo"
+            ReferencedContainer = "container:AssignmentVisionTwo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>AssignmentTwoVision.xcscheme</key>
+		<key>AssignmentVisionTwo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>375AFD821FAC053000786E83</key>
+		<key>371481A51FBD9EE900F5BAD2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

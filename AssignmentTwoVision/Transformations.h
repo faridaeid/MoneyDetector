@@ -17,6 +17,4 @@ void extractShapeFromImage(const cv::Mat src,
                const cv::Mat mask,
                cv::Mat& dst);
 
-cv::Scalar BGRTOHSV(const cv::Scalar& bgr);
-
 #endif /* Transformations_hpp */

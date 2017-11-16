@@ -9,7 +9,7 @@
 #ifndef CoinDetector_hpp
 #define CoinDetector_hpp
 
-#include "Circle.h"
+#include "../Shapes/Circle.h"
 
 void DetectCoins(cv::Mat original,
                  const std::vector<Circle> detectedCircles);

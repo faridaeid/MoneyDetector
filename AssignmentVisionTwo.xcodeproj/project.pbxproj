@@ -1,0 +1,376 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		371481B71FBD9F1B00F5BAD2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 371481B21FBD9F1B00F5BAD2 /* main.cpp */; };
+		371481B81FBD9F1B00F5BAD2 /* Transformations.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 371481B51FBD9F1B00F5BAD2 /* Transformations.cpp */; };
+		371481D61FBDA44E00F5BAD2 /* CoinDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 371481C41FBDA44E00F5BAD2 /* CoinDetector.cpp */; };
+		371481D71FBDA44E00F5BAD2 /* ColorDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 371481C61FBDA44E00F5BAD2 /* ColorDetector.cpp */; };
+		371481D81FBDA44E00F5BAD2 /* RectangleDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 371481C81FBDA44E00F5BAD2 /* RectangleDetector.cpp */; };
+		371481D91FBDA44E00F5BAD2 /* CircularHoughTransform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 371481CB1FBDA44E00F5BAD2 /* CircularHoughTransform.cpp */; };
+		371481DA1FBDA44E00F5BAD2 /* LinearHoughTransform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 371481CD1FBDA44E00F5BAD2 /* LinearHoughTransform.cpp */; };
+		371481DB1FBDA44E00F5BAD2 /* Circle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 371481D01FBDA44E00F5BAD2 /* Circle.cpp */; };
+		371481DC1FBDA44E00F5BAD2 /* Line.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 371481D21FBDA44E00F5BAD2 /* Line.cpp */; };
+		371481DD1FBDA44E00F5BAD2 /* Rectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 371481D41FBDA44E00F5BAD2 /* Rectangle.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		371481A41FBD9EE900F5BAD2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		371481A61FBD9EE900F5BAD2 /* AssignmentVisionTwo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AssignmentVisionTwo; sourceTree = BUILT_PRODUCTS_DIR; };
+		371481B21FBD9F1B00F5BAD2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = AssignmentTwoVision/main.cpp; sourceTree = "<group>"; };
+		371481B31FBD9F1B00F5BAD2 /* Matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Matrix.h; path = AssignmentTwoVision/Matrix.h; sourceTree = "<group>"; };
+		371481B51FBD9F1B00F5BAD2 /* Transformations.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Transformations.cpp; path = AssignmentTwoVision/Transformations.cpp; sourceTree = "<group>"; };
+		371481B61FBD9F1B00F5BAD2 /* Transformations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Transformations.h; path = AssignmentTwoVision/Transformations.h; sourceTree = "<group>"; };
+		371481C41FBDA44E00F5BAD2 /* CoinDetector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CoinDetector.cpp; sourceTree = "<group>"; };
+		371481C51FBDA44E00F5BAD2 /* CoinDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoinDetector.h; sourceTree = "<group>"; };
+		371481C61FBDA44E00F5BAD2 /* ColorDetector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColorDetector.cpp; sourceTree = "<group>"; };
+		371481C71FBDA44E00F5BAD2 /* ColorDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorDetector.h; sourceTree = "<group>"; };
+		371481C81FBDA44E00F5BAD2 /* RectangleDetector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RectangleDetector.cpp; sourceTree = "<group>"; };
+		371481C91FBDA44E00F5BAD2 /* RectangleDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RectangleDetector.h; sourceTree = "<group>"; };
+		371481CB1FBDA44E00F5BAD2 /* CircularHoughTransform.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CircularHoughTransform.cpp; sourceTree = "<group>"; };
+		371481CC1FBDA44E00F5BAD2 /* CircularHoughTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularHoughTransform.h; sourceTree = "<group>"; };
+		371481CD1FBDA44E00F5BAD2 /* LinearHoughTransform.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LinearHoughTransform.cpp; sourceTree = "<group>"; };
+		371481CE1FBDA44E00F5BAD2 /* LinearHoughTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinearHoughTransform.h; sourceTree = "<group>"; };
+		371481D01FBDA44E00F5BAD2 /* Circle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Circle.cpp; sourceTree = "<group>"; };
+		371481D11FBDA44E00F5BAD2 /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
+		371481D21FBDA44E00F5BAD2 /* Line.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Line.cpp; sourceTree = "<group>"; };
+		371481D31FBDA44E00F5BAD2 /* Line.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Line.h; sourceTree = "<group>"; };
+		371481D41FBDA44E00F5BAD2 /* Rectangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Rectangle.cpp; sourceTree = "<group>"; };
+		371481D51FBDA44E00F5BAD2 /* Rectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		371481A31FBD9EE900F5BAD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3714819D1FBD9EE900F5BAD2 = {
+			isa = PBXGroup;
+			children = (
+				371481C31FBDA44E00F5BAD2 /* Detectors */,
+				371481CA1FBDA44E00F5BAD2 /* HoughTransforms */,
+				371481CF1FBDA44E00F5BAD2 /* Shapes */,
+				371481B21FBD9F1B00F5BAD2 /* main.cpp */,
+				371481B31FBD9F1B00F5BAD2 /* Matrix.h */,
+				371481B51FBD9F1B00F5BAD2 /* Transformations.cpp */,
+				371481B61FBD9F1B00F5BAD2 /* Transformations.h */,
+				371481A81FBD9EE900F5BAD2 /* AssignmentVisionTwo */,
+				371481A71FBD9EE900F5BAD2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		371481A71FBD9EE900F5BAD2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				371481A61FBD9EE900F5BAD2 /* AssignmentVisionTwo */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		371481A81FBD9EE900F5BAD2 /* AssignmentVisionTwo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AssignmentVisionTwo;
+			sourceTree = "<group>";
+		};
+		371481C31FBDA44E00F5BAD2 /* Detectors */ = {
+			isa = PBXGroup;
+			children = (
+				371481C41FBDA44E00F5BAD2 /* CoinDetector.cpp */,
+				371481C51FBDA44E00F5BAD2 /* CoinDetector.h */,
+				371481C61FBDA44E00F5BAD2 /* ColorDetector.cpp */,
+				371481C71FBDA44E00F5BAD2 /* ColorDetector.h */,
+				371481C81FBDA44E00F5BAD2 /* RectangleDetector.cpp */,
+				371481C91FBDA44E00F5BAD2 /* RectangleDetector.h */,
+			);
+			name = Detectors;
+			path = AssignmentTwoVision/Detectors;
+			sourceTree = "<group>";
+		};
+		371481CA1FBDA44E00F5BAD2 /* HoughTransforms */ = {
+			isa = PBXGroup;
+			children = (
+				371481CB1FBDA44E00F5BAD2 /* CircularHoughTransform.cpp */,
+				371481CC1FBDA44E00F5BAD2 /* CircularHoughTransform.h */,
+				371481CD1FBDA44E00F5BAD2 /* LinearHoughTransform.cpp */,
+				371481CE1FBDA44E00F5BAD2 /* LinearHoughTransform.h */,
+			);
+			name = HoughTransforms;
+			path = AssignmentTwoVision/HoughTransforms;
+			sourceTree = "<group>";
+		};
+		371481CF1FBDA44E00F5BAD2 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				371481D01FBDA44E00F5BAD2 /* Circle.cpp */,
+				371481D11FBDA44E00F5BAD2 /* Circle.h */,
+				371481D21FBDA44E00F5BAD2 /* Line.cpp */,
+				371481D31FBDA44E00F5BAD2 /* Line.h */,
+				371481D41FBDA44E00F5BAD2 /* Rectangle.cpp */,
+				371481D51FBDA44E00F5BAD2 /* Rectangle.h */,
+			);
+			name = Shapes;
+			path = AssignmentTwoVision/Shapes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		371481A51FBD9EE900F5BAD2 /* AssignmentVisionTwo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 371481AD1FBD9EE900F5BAD2 /* Build configuration list for PBXNativeTarget "AssignmentVisionTwo" */;
+			buildPhases = (
+				371481A21FBD9EE900F5BAD2 /* Sources */,
+				371481A31FBD9EE900F5BAD2 /* Frameworks */,
+				371481A41FBD9EE900F5BAD2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AssignmentVisionTwo;
+			productName = AssignmentVisionTwo;
+			productReference = 371481A61FBD9EE900F5BAD2 /* AssignmentVisionTwo */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3714819E1FBD9EE900F5BAD2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Farida Eid";
+				TargetAttributes = {
+					371481A51FBD9EE900F5BAD2 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = CVQJFHTR9T;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 371481A11FBD9EE900F5BAD2 /* Build configuration list for PBXProject "AssignmentVisionTwo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3714819D1FBD9EE900F5BAD2;
+			productRefGroup = 371481A71FBD9EE900F5BAD2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				371481A51FBD9EE900F5BAD2 /* AssignmentVisionTwo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		371481A21FBD9EE900F5BAD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				371481DC1FBDA44E00F5BAD2 /* Line.cpp in Sources */,
+				371481DA1FBDA44E00F5BAD2 /* LinearHoughTransform.cpp in Sources */,
+				371481D61FBDA44E00F5BAD2 /* CoinDetector.cpp in Sources */,
+				371481DD1FBDA44E00F5BAD2 /* Rectangle.cpp in Sources */,
+				371481D91FBDA44E00F5BAD2 /* CircularHoughTransform.cpp in Sources */,
+				371481B81FBD9F1B00F5BAD2 /* Transformations.cpp in Sources */,
+				371481D81FBDA44E00F5BAD2 /* RectangleDetector.cpp in Sources */,
+				371481DB1FBDA44E00F5BAD2 /* Circle.cpp in Sources */,
+				371481B71FBD9F1B00F5BAD2 /* main.cpp in Sources */,
+				371481D71FBDA44E00F5BAD2 /* ColorDetector.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		371481AB1FBD9EE900F5BAD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		371481AC1FBD9EE900F5BAD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		371481AE1FBD9EE900F5BAD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = CVQJFHTR9T;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-lopencv_calib3d",
+					"-lopencv_core",
+					"-lopencv_features2d",
+					"-lopencv_flann",
+					"-lopencv_highgui",
+					"-lopencv_imgproc",
+					"-lopencv_ml",
+					"-lopencv_objdetect",
+					"-lopencv_photo",
+					"-lopencv_stitching",
+					"-lopencv_superres",
+					"-lopencv_ts",
+					"-lopencv_video",
+					"-lopencv_videostab",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		371481AF1FBD9EE900F5BAD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = CVQJFHTR9T;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-lopencv_calib3d",
+					"-lopencv_core",
+					"-lopencv_features2d",
+					"-lopencv_flann",
+					"-lopencv_highgui",
+					"-lopencv_imgproc",
+					"-lopencv_ml",
+					"-lopencv_objdetect",
+					"-lopencv_photo",
+					"-lopencv_stitching",
+					"-lopencv_superres",
+					"-lopencv_ts",
+					"-lopencv_video",
+					"-lopencv_videostab",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		371481A11FBD9EE900F5BAD2 /* Build configuration list for PBXProject "AssignmentVisionTwo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				371481AB1FBD9EE900F5BAD2 /* Debug */,
+				371481AC1FBD9EE900F5BAD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		371481AD1FBD9EE900F5BAD2 /* Build configuration list for PBXNativeTarget "AssignmentVisionTwo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				371481AE1FBD9EE900F5BAD2 /* Debug */,
+				371481AF1FBD9EE900F5BAD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3714819E1FBD9EE900F5BAD2 /* Project object */;
+}
